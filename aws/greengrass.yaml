@@ -111,7 +111,7 @@ Resources:
       FunctionName: !Join ["_", [!Ref CoreName, "sample"] ]
       Description: Long running lambda that provides telemetry and pub/sub echo
       Handler: index.function_handler
-      Runtime: python2.7
+      Runtime: python3.6
       Role: !GetAtt LambdaExecutionRole.Arn
       Timeout: 60
       Code:
