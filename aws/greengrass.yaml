@@ -283,7 +283,7 @@ Resources:
     Properties:
       Description: Resets any deployments during stack delete and manages Greengrass service role needs
       Handler: index.handler
-      Runtime: python3.6
+      Runtime: python3.7
       Role: !GetAtt LambdaExecutionRole.Arn
       Timeout: 60
       Environment:
